@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyStream</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: rgb(1, 1, 32);
+            color: white;
+            height: 50px;
+            font-style: italic;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        header a {
+            text-decoration: none;
+            color: white;
+            font-size: large;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        header a :hover{
+            color: palevioletred;
+        }
+        header .logo {
+            width: 40%;
+            text-align: left;
+            padding-bottom: 20px;
+            color: pink;
+            font-size:30px;
+        }
+        body{
+            background-color: #BBDCE5;
+            background-image: url("body.jpg");
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .back_img {
+            background-image: url(bac_img.jpg);
+            background-size:contain;
+            display: flex;
+            justify-content: center;
+            height: 400px;
+    
+        }
+        .picture {
+            display: flex;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-image: url("student_img.png");
+            background-size: cover;
+            margin-top: 20px;
+            position: relative;
+            border: 2px solid blue;
+        
+        }
+       
+        .content { 
+            padding: 40px;
+            text-align: center;
+            height: 300px;
+            background-color: #ECEEDF;
+            color: rgb(170, 219, 48);
+            font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: larger;
+            background-image: url("image.jpg");
+            background-size: cover;
+            
+        }
+        
+        .content i {
+            color: rgb(245, 173, 253);
+            font-weight: 300;
+            font-style: oblique;
+        }
+        .content .quote1 {
+            color: rgb(238, 184, 6);
+        }
+        .content .quote2 {
+            color : rgb(182, 224, 248)
+        }
+        .boxes1 {
+            height: 400px;
+            background-color: #D9C4B0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-image: url("box1.jpg");
+            background-size:cover ;
+        }
+        .boxes1 .box1 {
+            border: 2px solid black;
+            height: 200px;
+            width: 30%;
+            border-radius: 10%;
+            background-image: url("pl3.webp");
+            background-size: cover;
+            text-align: center;
+            padding-top: 50px;
+            color: rgb(6, 2, 81);
+            text-shadow: (1px 1px 1px);
+        }
+        .boxes1 .box2 {
+            border: 2px solid black;
+            height: 200px;
+            width: 30%;
+            border-radius: 10%;
+            background-image: url("pl1.webp");
+            background-size: cover;
+            text-align: center;
+            padding-top: 50px;
+            text-shadow: (1px 1px 1px);
+            color: rgb(104, 104, 2);
+            
+        }
+        button {
+            height: 50px;
+            width: 150px;
+            background-color: rgb(191, 200, 18);
+            border-radius: 10%;
+            margin-top: 40px;
+            font-style: oblique;
+        }
+        .boxes2 {
+            background-color: #CFAB8D;
+            height: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-image: url("box2.jpg");
+            background-size: cover;
+        }
+        .boxes2 .box3 {
+            border: 2px solid black;
+            height: 200px;
+            width: 30%;
+            border-radius: 10%;
+            background-image: url("pl4.jpg");
+            background-size: cover;
+            text-align: center;
+            padding-top: 50px;
+            color: rgb(63, 5, 86);
+            text-shadow: (1px 1px 1px);
+        }
+        .boxes2 .box4 {
+            border: 2px solid black;
+            height: 200px;
+            width: 30%;
+            border-radius: 10%;
+            background-image: url("pl6.webp");
+            background-size: cover;
+            text-align: center;
+            padding-top: 50px;
+            text-shadow: (1px 1px 1px);
+            color: rgb(54, 3, 3);
+            
+        }
+        button {
+            height: 50px;
+            width: 150px;
+            background-color: rgb(191, 200, 18);
+            border-radius: 10%;
+            margin-top: 40px;
+            font-style: oblique;
+        }
+        .bcw {
+            background-color: #ECEEDF;
+            height: 60px;
+        }
+        a {
+            text-decoration: none;
+        }
+        footer {
+            height: 70px;
+            text-align: center;
+            padding-top: 30px;
+            background-color: rgb(1, 1, 46);
+            color: white;
+        }
+        footer p {
+            text-align: left;
+            margin-left: 10px;
+            font-size: larger;
+        }
+        .our_cource {
+            text-align: center ;
+            height: 50px;
+            color: rgb(220, 236, 1);
+            font-size: 30px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">StudyStream</a>
+        <a href="#"><i class="fa-solid fa-house-user"></i>Home</a>
+        <a href="#"><i class="fa-solid fa-store"></i>Store</a>
+        <a href="#"><i class="fa-regular fa-address-card"></i>About us</a>
+        <a href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i>sign in</a>
+    </header>
+    <div class="back_img">
+        <div class="picture"></div>
+    </div>
+    <div class="content">
+        <h2>Welcome To <i>StudyStream</i></h2>
+        <br>
+        <P>Here you can learn with joy and fun</P>
+        <br>
+        <p class="quote1">Every Expert was once a beginer, Embrance the Journey..</p>
+        <br>
+        <P class="quote2">If you are not Willing to learn, no one can help you ;<br>If you are Dertermined to learn, no one can stop you..</P>
+    </div>
+    <h2 class="our_cource">Our Cources</h2>
+    <div class="boxes1">
+        <div class="box1">
+            <div class="bcw">
+             <h2>Learn Programming Languages</h2>
+             <h2>like <b>HTML, CSS, JS, C, C++...</b></h2>
+             <button><a href="programing learn.html">Click here to Explore..</a></button>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="bcw">
+             <h2>Practice Questions Based on Topics</h2>
+             <h2>ex : HTML, CSS, JS..</h2>
+             <button><a href="practice_questions.html">Click here to Explore</a></button>
+            </div>P
+        </div>
+    </div>
+    <div class="boxes2">
+        <div class="box3">
+            <div class="bcw">
+                <h2>Samples and Ideas of Real life projects ex:Portfolio..</h2>
+                <button><a href="sample_projects.html">Click here to Explore</a></button>
+            </div>
+        </div>
+        <div class="box4">
+            <div class="bcw">
+                <h2>Prepare for your Interview Questions from top MNC's</h2>
+                <button><a href="interview_questions.html">Click here to Explore</a></button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <i class="fa-regular fa-copyright"></i>learn with love.. -StudyStream
+        <P>emil : StudyStream@gmail.com</P>
+        <h3>contact us : 000XXX9800</h3>
+    </footer>
+
+</body>
+</html>
