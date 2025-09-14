@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to StudyStream</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            
+            background: linear-gradient(pink, blue);
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            height: 40px;
+            background-color: rgb(3, 3, 66);
+            width: 100vw;
+            padding-top: 10px;
+            color: rgb(5, 232, 213);
+        }
+        .navbar a {
+            color: white;
+        }
+        .box{
+            margin-left: 30vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 500px;
+            width: 500px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            border-radius: 20%;
+            padding: 10px;
+            background-color: rgb(219, 100, 156,0.4);
+            box-shadow: 2px 2px 2px  black;
+        }
+        h2{
+            margin-bottom: 10%;
+            font-style: oblique;
+            font-size:30px;
+        }
+        
+        button{
+            height: 10%;
+            width: 20%;
+            margin-top: 5%;
+        }
+        a{
+            text-decoration: none;
+        }
+        .w{
+            width: 200px;
+            height: 30px;
+            font-style: italic;
+            background-color: rgb(245, 239, 230);
+        }
+        button:hover{
+            background-color: cadetblue;
+        }
+        button a:hover{
+            color: white;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="navbar">
+        <h3>StudyStream</h3>
+        <a href="#"><i class="fa-solid fa-house-user"></i>Home</a>
+        <a href="#"><i class="fa-solid fa-address-card"></i>About</a>
+        <a href="#"><i class="fa-solid fa-id-badge"></i>contact</a>
+        <a href="#"><i class="fa-solid fa-handshake-angle"></i>help</a>
+    </div>
+    <div class="box">
+    <h2>Welcome to StudyStream</h2>
+    <label for="info">
+        <input type="text"placeholder="enter your name"class="w">
+        <br>
+        <br>
+        <input type="text"placeholder="mobile number"class="w">
+        <br>
+        <br>
+        <input type="email"placeholder="Email"class="w">
+        <br>
+        <br>
+        <input type="password"placeholder="password"class="w">
+    </label>
+    <br>
+    <br>
+    <select name="state" id="state"class="w">
+        <option value="choose your state">choose your state</option>
+        <option value="delhi">delhi</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Pune">Pune</option>
+        <option value="Maharastra">Maharastra</option>
+        <option value="Punjab">Punjab</option>
+    </select>
+    <br>
+    <br>
+    <button class="w"><a href="index.html">login</a></button>
+    </div>
+</body>
+</html>
